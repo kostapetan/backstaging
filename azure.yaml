@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: backstaging
+services:
+    backstage:
+        project: src/backstage
+        host: containerapp
+        language: ts
+    radar-discussions:
+        project: src/radar-discussions
+        host: containerapp
+        docker:
+            context: ../../
+        language: dotnet
